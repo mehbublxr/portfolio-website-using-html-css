@@ -1,0 +1,244 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ /* nav section start */
+ .navsection {
+     width: 100%;
+     height: 20vh;
+     justify-content: center;
+     justify-content: space-around;
+     align-items: center;
+     background-image: linear-gradient(to top, #fff 80%, #90e0ef 20%);
+     display: flex;
+
+ }
+
+
+ /* logo section start */
+ .logo {
+     width: 30%;
+     color: white;
+     background-image: linear-gradient(#90e0ef 10%, blue 88%, black 2%);
+     padding-left: 6.2rem;
+ }
+
+ .logo h1 {
+     font-size: 1.6rem;
+     animation: aagepiche 2s linear infinite;
+     animation-duration: alternate;
+ }
+
+ /* logo section end */
+
+ @keyframes aagepiche {
+     from {
+         padding-left: 3rem;
+     }
+
+     to {
+         padding-right: 3rem;
+     }
+ }
+
+ nav {
+     width: 70%;
+     /* background-color: yellow; */
+     display: flex;
+     justify-content: space-around;
+ }
+
+ nav a {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: black;
+     font-weight: 900;
+     font-size: 1.1rem;
+     position: relative;
+ }
+
+ nav a:hover {
+     color: blue
+ }
+
+ nav a:first-child {
+     color: blue;
+ }
+
+ nav a:before {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 0%;
+     height: 2px;
+     border-bottom: 2px solid blue;
+     transition: all 0.4s linear;
+ }
+
+ nav a:hover:before {
+     width: 100%;
+ }
+
+ /* nav section end */
+
+ main {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: 600px;
+     background-image: linear-gradient(to left, white 85%, #caf0f8 12%);
+ }
+
+
+  /* right div start here */
+
+ .rightside {
+     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+     background-color: #caf0f8;
+ }
+
+ .rightside img {
+     max-width: 800px;
+     height: auto;
+     border-radius: 900px;
+ }
+
+
+ /* left div start here */
+ .leftside {
+     color: black;
+     text-transform: uppercase;
+
+ }
+
+ .leftside h3 {
+     font-size: 2.5rem;
+     margin-bottom: 1.5rem;
+     position: relative;
+     color: blue;
+     font-family: 'DynaPuff', cursive;
+ }
+
+ .leftside h3:hover{
+    color :black;
+ }
+
+ .leftside h3:after {
+     content: "";
+     width: 450px;
+     height: 3px;
+     position: absolute;
+     top: 43%;
+     left: 22%;
+     background-color: black;
+
+ }
+
+ .leftside h1 {
+     margin-top: 20px;
+     font-size: 60px;
+     margin-bottom: 25px;
+     word-spacing: 3px;
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+     padding: 0 3px;
+ }
+
+ .leftside h1::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: linear-gradient(#90e0ef 10%, blue 88%);
+     width: 100%;
+     height: 65px;
+     transform: translateX(-100%);
+     transition: all 0.4s linear;
+ }
+
+ .leftside h1:hover::before {
+     transform: translateX(0);
+     z-index: -1;
+     border-radius: 5px;
+ }
+
+ .leftside h1:hover {
+     color: white;
+
+ }
+
+
+ .leftside h2 {
+     margin-bottom: 75px;
+     font-weight: 500;
+     word-spacing: 5px;
+     
+ }
+
+ .leftside h2:hover {
+    color: rgb(29, 8, 255);
+    animation: aagepiche 2s linear infinite;
+     animation-duration: alternate;
+
+}
+
+ /* button start here */
+ .leftside .btn1 {
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 14px;
+     text-align: center;
+     padding: 12px 25px;
+     cursor: pointer;
+     display: inline-block;
+     margin-right: 50px;
+     color: #fff;
+     background-color: blue;
+     border: 1px solid black;
+     border-radius: 1.5rem 0;
+     letter-spacing: 1px;
+
+ }
+
+ .btn2 {
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 14px;
+     text-align: center;
+     padding: 12px 20px;
+     cursor: pointer;
+     border: 1px solid blue;
+     border-radius: 5px;
+     display: inline-block;
+     margin-left: 50px;
+     color: blue;
+     background-color: white;
+     border-radius: 1.5rem 0;
+     letter-spacing: 1px;
+     margin-top: 50px;
+
+
+ }
+
+ .btn1:hover {
+     color: blue;
+     background-color: #ffffff;
+     border: 1px solid blue;
+     border-radius: 1.5rem 0;
+
+ }
+
+ .btn2:hover {
+     color: #fff;
+     background-color: blue;
+     border: 1px solid blue;
+     border-radius: 1.5rem 0;
+
+ }
+
+ /* button end here */
